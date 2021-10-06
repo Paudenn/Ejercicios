@@ -5,6 +5,7 @@ public class StackImpl <E> implements Stack<E> {
     private int p;
 
     public StackImpl(int len){
+        this.p = 0;
         data = (E[])new Object[len];
     }
 
@@ -22,6 +23,6 @@ public class StackImpl <E> implements Stack<E> {
 
     @Override
     public int size() {
-        return 0;
+        return this.p;
     }
 }
